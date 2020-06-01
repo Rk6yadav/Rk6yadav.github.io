@@ -1,0 +1,278 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+.logo{
+    background-image: url("/logo/logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    font-size: 3.4vw;
+    font-family: serif;
+    
+}
+.logo::after{
+    margin-left: 4.5vw;
+    font-size: 3vw;
+    content: "Study Lover";
+    
+}
+.nav-bar{
+    padding: .2vw;
+    width: 99.4%;
+    height: 5.2vw;
+    
+    
+}
+@media  screen and (max-width: 1400px) {
+.nav-bar a{
+    text-decoration: none;
+    color: black;
+    
+}
+.nav-logo{
+    
+    margin: 0 2vw ;
+    display: flex;
+    list-style: none;
+    float: left;
+    width: fit-content;
+    
+    
+}
+.nav-menu{
+    
+    display: flex;
+    list-style: none;
+    float: right;
+    margin-top: .7vw;
+    
+    width: fit-content;
+}
+.nav-menu a{
+    font-size: 1.5vw;
+}
+.nav-menu>li{
+    margin: 1vw;
+    padding: 0 1vw .5vw;
+    
+}
+.background{
+    background-image: url("/images/b4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 40vw; 
+        
+}
+.front-txt{
+    color: white;
+    position: absolute;
+    left: 30vw;
+    top: 20vw;
+    font-size: 5vw;
+    font-family: serif;
+}
+.mkrow{
+    display: flex;    
+    padding: 1vw;
+    
+}
+.ele{
+    border: 2px dotted black;
+    width: 111vw;
+    margin: .5vw;
+    text-align: center;
+    align-content: center;
+    border-radius: 3vw 0vw;
+    overflow:hidden;
+}
+.ele:hover .eletxt{
+    display: block;
+    
+    
+}
+.ele:hover .eleimg{
+    display: none;
+    
+}
+    .ele:hover .elehd{
+        padding:  0.2vw 0.7vw;
+    }
+a:hover{
+    text-decoration: none;
+}
+.eleimg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    transition: display 2s;
+}
+.elehd{
+    font-size: 1.8vw;
+    padding: 0 0.7vw  ;
+    border-radius: 3vw;
+    text-decoration: none;
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+    color: #000;
+    background-color: #5553;
+    font-weight: 900;
+    font-family:serif;
+}
+.eletxt{
+    color: black;
+    transition: display 2s;
+    background-color: #8885;
+    border-bottom-left-radius: 2vw;
+    border-bottom-right-radius: 2vw;
+    margin:  .5vw 0 ;
+    font-size: 1.4vw;
+    font-weight: 450;
+    font-family:sans-serif;
+    
+}
+#cv{
+    background-image: url(/images/CV%20Icon.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 12vw;
+    align-content: center;
+    font-family: serif;
+    width: 16vw;
+    
+}
+#cv::after{
+    margin: 1px;
+    content: "";
+}
+#cl{
+    background-image: url(/images/CL%20Icon.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 12vw;
+    font-family: serif;
+    width: 19vw;
+}
+#cl::after{
+    margin: 1px;
+    content: "";
+}
+#sz{
+    background-image: url(/images/book%20icon.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 12vw;
+    font-family: serif;
+    width: 18vw;
+}
+#sz::after{
+    margin: 1px;
+    content: "";
+}
+
+.eletxt{
+    display: none;
+}
+}
+/*########      900 screen brake point            #################################*/
+@media  screen and (max-width: 900px) {
+
+    .nav-menu a{
+    font-size: 2vw;
+}
+   
+    body {
+    background-color: lightgreen;
+  }
+}
+
+
+
+
+/*########      700 screen brake point            #################################*/
+@media  screen and (max-width: 700px) {
+.nav-bar{
+    
+    padding: .3vw;
+    width: 99.4%;
+    height: 6vw;
+        
+}
+
+
+.nav-menu a{
+    font-size: 2vw;
+    color: red;
+}
+    .logo{
+    background-image: url("/images/logosm.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    font-size: 4vw;
+    margin: 3vw;
+}
+    .logo::after{
+    content: "";
+    
+}
+
+  .mkrow{
+    display:block;    
+    padding: 1vw;
+    width: 90%;
+      
+}
+.ele{
+    border: 0px solid black;
+    width: 100%;;
+    margin: 1vw 0;
+    display: inline-flex;
+    
+}
+.eleimg{
+    display: block;
+    
+
+}
+.elehd{
+    font-size: 2.5vw;
+    padding: 0 1vw ;
+    border-radius: 3vw;
+    text-decoration: none;
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+    color: #000;
+    background-color: #5553;
+    font-weight: 900;
+    font-family:serif;
+}
+.eletxt{
+    color: black;
+    background-color: #8885;
+    border-bottom-left-radius: 2vw;
+    border-bottom-right-radius: 2vw;
+    margin:  1.2vw 0;
+    font-size: 2vw;
+    padding-top: 1vw;
+    font-weight: 450;
+    font-family:sans-serif;
+    
+}
+.ele:hover .elehd{
+    text-decoration:none;
+    
+    color: #42f;
+}
+    
+
+
+
+    body {
+    background-color: #f776;
+  }
+}

@@ -1,0 +1,50 @@
+.logo{
+    background-image: url("/logo/logosm.png");
+    box-sizing: content-box;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 30vw;
+    height: 6vw;
+    margin: 1vw;
+    margin-left: 2vw;
+}
+nav{
+    font-family: "arial"  ;
+    font-size: 15px;
+    
+}
+.nv{
+    background-color: white;
+    height: 6.5vw;
+    display:block;
+    
+ 
+}
+body {
+    width: 100%;
+    
+}
+.background{
+    background-image: url("/logo/small%20bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 40vw;
+    display: flex;
+    
+    
+  
+  
+}
+.front-txt{
+    height: 0;
+    color: white;
+    position: relative;
+    top: 14vw;
+    left: 30vw;
+    font-size: 5.5vw;
+}
+.nav-items >a{
+    color: black;
+    font-size: 1.4vw;
+}
