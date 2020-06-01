@@ -81,7 +81,7 @@
 }
 .ele{
     border: 2px dotted black;
-    width: 111vw;
+    width: 100%;
     margin: .5vw;
     text-align: center;
     align-content: center;
