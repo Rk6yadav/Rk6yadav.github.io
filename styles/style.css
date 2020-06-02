@@ -12,14 +12,14 @@ body *{
     background: white;
     
 }
-.nav-logo{
+.logo{
     float: left;
     background: url(/images/logo.png);
     background-repeat: no-repeat;
     background-size: contain;
-    
+    color: black;
     }
-.nav-logo::after{
+.logo::after{
     content: "Study Lover";
     margin-left: 5vw;
     font-size: 3vw;
@@ -184,14 +184,14 @@ body *{
     height: 5.3vw;
     margin: 1vw;
 }
-.nav-logo{
+.logo{
     float: left;
     background: url(/images/logo.png);
     background-repeat: no-repeat;
     background-size: contain;
     
     }
-.nav-logo::after{
+.logo::after{
     content: "Study Lover";
     margin-left: 5vw;
         font-size: 3vw;
@@ -215,14 +215,14 @@ body *{
     height: 5.4vw;
     margin: 1vw;
 }
-.nav-logo{
+.logo{
     float: left;
     background: url(/images/logosm.png);
     background-repeat: no-repeat;
     background-size: contain;
     margin-left: 3vw;
     }
-.nav-logo::after{
+.logo::after{
     content: " ";
 }
 .nav-menu{
