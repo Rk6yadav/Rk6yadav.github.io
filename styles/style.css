@@ -174,7 +174,7 @@ body *{
 
 
 /*########      900 screen brake point            #################################*/
-@media  screen and (max-width: 1000px) {
+@media  screen and (max-width: 900px) {
 .nav-bar{
     display: block;
     text-align: center;
@@ -204,8 +204,8 @@ body *{
 
 
 
-/*########      800 screen brake point            #################################*/
-@media  screen and (max-width: 900px) {
+/*########      700 screen brake point            #################################*/
+@media  screen and (max-width: 700px) {
     .nav-bar{
     display: block;
     text-align: center;
