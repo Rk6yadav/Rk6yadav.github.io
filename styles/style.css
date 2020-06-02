@@ -1,278 +1,236 @@
-
-*{
-    padding: 0;
-    margin: 0;
-    
-}
-.logo{
-    background-image: url("/images/logo.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    font-size: 3.4vw;
-    font-family: serif;
-    
-}
-.logo::after{
-    margin-left: 4.5vw;
-    font-size: 3vw;
-    content: "Study Lover";
-    
+body *{
+    all: unset;
 }
 .nav-bar{
-    padding: .2vw;
-    width: 99.4%;
-    height: 5.2vw;
-    
-    
-}
-@media  screen and (max-width: 1400px) {
-.nav-bar a{
-    text-decoration: none;
-    color: black;
-    
+    display: block;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 4.5vw;
+    widows: 100%;
+    height: 5.3vw;
+    margin: 1vw;
 }
 .nav-logo{
-    
-    margin: 0 2vw ;
-    display: flex;
-    list-style: none;
     float: left;
-    width: fit-content;
+    background: url(/images/logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
     
-    
+    }
+.nav-logo::after{
+    content: "Study Lover";
+    margin-left: 5vw;
+    font-size: 3vw;
+    position: relative;
+    top: -.6vw;
 }
 .nav-menu{
-    
-    display: flex;
-    list-style: none;
     float: right;
-    margin-top: .7vw;
-    
-    width: fit-content;
+    font-size: 2vw;
+    margin: 1.5vw 1vw;
+}
+.nav-menu > li{
+    padding: .5vw;
 }
 .nav-menu a{
-    font-size: 1.5vw;
+    color: black;
 }
-.nav-menu>li{
-    margin: 1vw;
-    padding: 0 1vw .5vw;
+.nav-menu li:hover a{
+    color: white;
+}
+
+    .nav-menu >li:hover{
+    background-image: linear-gradient(lightblue, #111);
+    border-radius: .4vw;
+    color: ghostwhite;
     
 }
 .background{
-    background-image: url("/images/b4.jpg");
+    display: block;
+    background-image: url(/images/b4.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100%;
-    height: 40vw; 
-        
+    height: 10vw;
+    width: auto;;
+    font-size: 4.5vw;
+    text-align: center;
+    padding: 13vw;
+    color: floralwhite;
+    text-shadow: 2px 2px 9px #000;
 }
-.front-txt{
-    color: white;
-    position: absolute;
-    left: 30vw;
-    top: 20vw;
-    font-size: 5vw;
-    font-family: serif;
+.con{
+    display: block;
+    margin:  1vw 5vw ;
+    text-align: center;
+    
 }
 .mkrow{
-    display: flex;    
-    padding: 1vw;
-    
+    display: flex;
+        
 }
 .ele{
-    border: 2px dotted black;
-    width: 100%;
-    margin: .5vw;
-    text-align: center;
-    align-content: center;
-    border-radius: 3vw 0vw;
-    overflow:hidden;
+    display: inline-block;
+    width: 33vw;
+    margin: 1vw;
 }
-.ele:hover .eletxt{
+.ele:hover{
+    background-image: linear-gradient(#666,#fff);
+    
+}
+#cv{
+    background: url(/images/CV%20Icon.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-size: 12vw;
+    align-content: center;
+    font-family: serif;
+    width: 16vw;
+    position: relative;
+    right: -1vw;
+}
+#cv::after{
+    content: "";
+    margin: 7vw;
+    
+}
+#cl{
+    background: url(/images/CL%20Icon.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-size: 12vw;
+    align-content: center;
+    font-family: serif;
+    width: 16vw;
+}
+#cl::after{
+    content: "";
+    margin: 7vw;
+    
+}
+#sz{
+    background: url(/images/book%20icon.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-size: 12vw;
+    align-content: center;
+    font-family: serif;
+    width: 16vw;
+}
+#sz::after{
+    content: "";
+    margin: 7vw;
+    
+}
+
+.eleimg{
+    width: 100%;
     display: block;
     
-    
-}
-.ele:hover .eleimg{
-    display: none;
-    
-}
-    .ele:hover .elehd{
-        padding:  0.2vw 0.7vw;
-    }
-a:hover{
-    text-decoration: none;
-}
-.eleimg{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    transition: display 2s;
-}
-.elehd{
-    font-size: 1.8vw;
-    padding: 0 0.7vw  ;
-    border-radius: 3vw;
-    text-decoration: none;
-    width: fit-content;
-    height: fit-content;
-    margin: 0 auto;
-    color: #000;
-    background-color: #5553;
-    font-weight: 900;
-    font-family:serif;
 }
 .eletxt{
+    display: none;
     color: black;
     transition: display 2s;
     background-color: #8885;
     border-bottom-left-radius: 2vw;
     border-bottom-right-radius: 2vw;
-    margin:  .5vw 0 ;
+    margin:  1vw 2vw 0;
     font-size: 1.4vw;
     font-weight: 450;
     font-family:sans-serif;
-    
 }
-#cv{
-    background-image: url(/images/CV%20Icon.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    font-size: 12vw;
-    align-content: center;
-    font-family: serif;
-    width: 16vw;
-    
+.elehd{
+    font-size: 1.8vw;
+    padding: 0 0.7vw;
+     text-shadow: 2px 2px 9px #777;   
+    box-shadow: 2px 2px 4px #777; 
+    text-decoration: none;
+    width: fit-content;
+    height: fit-content;
+    margin: 1vw auto;
+    color: #000;
+    background-color: #ddd;
+    font-weight: 900;
+    font-family:serif;
 }
-#cv::after{
-    margin: 1px;
-    content: "";
+.ele:hover .elehd{
+    color: #fff;
+    background-color: #222;
+    text-shadow: 2px 2px 9px #0f0;   
+    padding: .5vw;
+    box-shadow: 3vw;
 }
-#cl{
-    background-image: url(/images/CL%20Icon.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    font-size: 12vw;
-    font-family: serif;
-    width: 19vw;
-}
-#cl::after{
-    margin: 1px;
-    content: "";
-}
-#sz{
-    background-image: url(/images/book%20icon.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    font-size: 12vw;
-    font-family: serif;
-    width: 18vw;
-}
-#sz::after{
-    margin: 1px;
-    content: "";
-}
-
-.eletxt{
+.ele:hover .eleimg{
     display: none;
 }
+.ele:hover .eletxt{
+    display: block;
+    
+    text-align: center;
+    overflow: hidden;
 }
+@media  screen and (max-width: 1400px) {
+    }
+
+
 /*########      900 screen brake point            #################################*/
 @media  screen and (max-width: 900px) {
-
-    .nav-menu a{
-    font-size: 2vw;
+.nav-bar{
+    display: block;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 4.5vw;
+    widows: 100%;
+    height: 5.3vw;
+    margin: 1vw;
 }
-   
-    body {
-    background-color: lightgreen;
-  }
+.nav-logo{
+    float: left;
+    background: url(/images/logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+    }
+.nav-logo::after{
+    content: "Study Lover";
+    margin-left: 5vw;
+        font-size: 3vw;
 }
-
+.nav-menu{
+    float: right;
+    font-size: 2.5vw;
+    margin: 1vw;
+}
 
 
 
 /*########      700 screen brake point            #################################*/
 @media  screen and (max-width: 700px) {
-.nav-bar{
-    
-    padding: .3vw;
-    width: 99.4%;
-    height: 6vw;
-        
-}
-
-
-.nav-menu a{
-    font-size: 2vw;
-    color: red;
-}
-    .logo{
-    background-image: url("/images/logosm.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    font-size: 4vw;
-    margin: 3vw;
-}
-    .logo::after{
-    content: "";
-    
-}
-
-  .mkrow{
-    display:block;    
-    padding: 1vw;
-    width: 90%;
-      
-}
-.ele{
-    border: 0px solid black;
-    width: 100%;;
-    margin: 1vw 0;
-    display: inline-flex;
-    
-}
-.eleimg{
+    .nav-bar{
     display: block;
-    
-
+    text-align: center;
+    vertical-align: middle;
+    font-size: 4.5vw;
+    widows: 100%;
+    height: 5.4vw;
+    margin: 1vw;
 }
-.elehd{
+.nav-logo{
+    float: left;
+    background: url(/images/logosm.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 3vw;
+    }
+.nav-logo::after{
+    content: " ";
+}
+.nav-menu{
+    float: right;
     font-size: 2.5vw;
-    padding: 0 1vw ;
-    border-radius: 3vw;
-    text-decoration: none;
-    width: fit-content;
-    height: fit-content;
-    margin: 0 auto;
-    color: #000;
-    background-color: #5553;
-    font-weight: 900;
-    font-family:serif;
+    margin: 1.5vw 1vw;
 }
-.eletxt{
-    color: black;
-    background-color: #8885;
-    border-bottom-left-radius: 2vw;
-    border-bottom-right-radius: 2vw;
-    margin:  1.2vw 0;
-    font-size: 2vw;
-    padding-top: 1vw;
-    font-weight: 450;
-    font-family:sans-serif;
-    
+.nav-menu > li{
+    margin: .5vw;
 }
-.ele:hover .elehd{
-    text-decoration:none;
-    
-    color: #42f;
-}
-    
-
-
-
-    body {
-    background-color: #f776;
-  }
 }
