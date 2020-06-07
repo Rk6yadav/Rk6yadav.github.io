@@ -1,0 +1,13 @@
+.gblock{
+    display: block;
+    background-image: url(/images/pop.jpg);
+    background-size: cover;
+    height: 5vw;
+    text-align: center;
+    align-content: center;
+    text-decoration: none;
+    font-size: 2vw;
+    color: black;
+    text-shadow: 2px 1px 4px white;
+    padding: 4vw;
+}
